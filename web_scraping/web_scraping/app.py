@@ -1,4 +1,4 @@
-
+import bancopopular.py
 from flask import Flask, render
 import os
 import sys
@@ -7,7 +7,7 @@ import sys
 app = Flask(__name__)
 
 @app.route('/bancopopular')
-def app():
+def index():
     return bancopopular.app()
     
 @app.route('/bancolombia')
