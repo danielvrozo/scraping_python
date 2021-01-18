@@ -1,5 +1,5 @@
 import bancopopular.py
-from flask import Flask, render
+from flask import Flask, render_template
 import os
 import sys
 
