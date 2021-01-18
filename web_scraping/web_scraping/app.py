@@ -7,7 +7,7 @@ import sys
 app = Flask(__name__)
 
 @app.route('/bancopopular')
-def app(bancopopular=None):
+def app():
     return bancopopular.app()
     
 @app.route('/bancolombia')
