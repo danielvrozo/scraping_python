@@ -1,4 +1,4 @@
-import bancopopular.py
+import bancopopular
 from flask import Flask, render_template
 import os
 import sys
