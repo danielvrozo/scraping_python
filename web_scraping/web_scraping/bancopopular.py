@@ -3,11 +3,8 @@ import sys
 from bs4 import BeautifulSoup
 import urllib.request
 
-
-sys.path.insert(0, os.path.dirname(_file_))
-
-
-def app(environ, start_response):
+def scraping(environ, start_response):
+    
     start_response('200 OK', [('Content-Type', 'text/html')])
 
     URL = 'https://www.bancopopular.com.co/wps/portal/bancopopular/inicio/informacion-interes/tasas'
@@ -26,5 +23,5 @@ def app(environ, start_response):
     
     tabla = soup.find('table', attrs={'class':'simple-table'})
     
-    
     return [tabla.encode()]
+    
